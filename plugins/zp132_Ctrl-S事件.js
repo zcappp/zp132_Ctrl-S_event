@@ -6,12 +6,12 @@ function save(e) {
     }
 }
 
-function onInit(ref) {
+function init(ref) {
     window.zp132 = ref
     document.addEventListener("keydown", save)
 }
 
-function onDestroy(ref) {
+function destroy(ref) {
     document.removeEventListener("keydown", save)
 }
 
@@ -22,6 +22,6 @@ $plugin({
         type: "exp",
         label: "事件表达式"
     }],
-    onInit,
-    onDestroy
+    init,
+    destroy
 })
