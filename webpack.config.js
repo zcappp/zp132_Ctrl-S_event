@@ -5,7 +5,7 @@ module.exports = {
     mode: process.env.mode || "development",
     devtool: false,
     entry: {
-        "zp132": "./plugins/zp132_Ctrl-S事件.js",
+        "zp132": "./src/zp132_Ctrl-S事件.js",
     },
     output: {
         path: path.join(__dirname, "build/"),
